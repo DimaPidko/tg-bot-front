@@ -18,8 +18,8 @@ function App() {
 		<div className='App'>
 			<Header></Header>
 			<Routes>
-				<Route path='/' element={<ProductList />} />
-				<Route path='/form' element={<Form />} />
+				<Route path='/products' element={<ProductList />} />
+				<Route path='/' element={<Form />} />
 			</Routes>
 		</div>
 	)
