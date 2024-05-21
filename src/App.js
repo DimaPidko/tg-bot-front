@@ -1,12 +1,7 @@
-// import OpenAI from 'openai'
 import { useEffect } from 'react'
 import './App.css'
 
 const tg = window.Telegram.WebApp
-// const openai = new OpenAI({
-// 	apiKey: '',
-// 	dangerouslyAllowBrowser: true,
-// })
 
 function App() {
 	useEffect(() => {
