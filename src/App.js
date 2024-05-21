@@ -4,7 +4,7 @@ import './App.css'
 
 const tg = window.Telegram.WebApp
 // const openai = new OpenAI({
-// 	apiKey: 'sk-proj-SfG2qEWz36GZhSSinZz4T3BlbkFJwr2x6rO1QetoDWPO2e93',
+// 	apiKey: '',
 // 	dangerouslyAllowBrowser: true,
 // })
 
