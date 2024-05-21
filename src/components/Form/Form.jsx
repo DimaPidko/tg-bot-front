@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useTelegram } from '../../hooks/useTelegram'
+// import { useTelegram } from '../../hooks/useTelegram'
 import './Form.css'
 
 const Form = () => {
 	const [country, setCountry] = useState('')
 	const [city, setCity] = useState('')
 	const [subject, setSubject] = useState('physical')
-
-	const { tg } = useTelegram()
+	const tg = window.Telegram.WebApp
+	// const { tg } = useTelegram()
 
 	useEffect(() => {
 		tg.MainButton.setParams({

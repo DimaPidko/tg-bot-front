@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useTelegram } from './hooks/useTelegram'
+// import { useTelegram } from './hooks/useTelegram'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
@@ -7,9 +7,9 @@ import Header from './components/Header/Header'
 import ProductList from './components/ProductList/ProductList'
 import Form from './components/Form/Form'
 
-function App() {
-	const { tg } = useTelegram()
+const tg = window.Telegram.WebApp
 
+function App() {
 	useEffect(() => {
 		tg.ready()
 	}, [])
