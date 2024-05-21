@@ -24,13 +24,15 @@ const Form = () => {
 		return () => {
 			tg.WebApp.offEvent('mainButtonClicked', onSendData)
 		}
-	})
+		// eslint-disable-next-line
+	}, [])
 
 	useEffect(() => {
 		tg.MainButton.setParams({
 			text: 'Отправить данные',
 		})
-	})
+		// eslint-disable-next-line
+	}, [])
 
 	useEffect(() => {
 		if (!country || !city) {
@@ -38,7 +40,8 @@ const Form = () => {
 		} else {
 			tg.MainButton.show()
 		}
-	})
+		// eslint-disable-next-line
+	}, [])
 
 	const onChangeCountry = e => {
 		setCountry(e.target.value)
